@@ -2,8 +2,31 @@
 
 ## Основное
 
+Показать текущую версию GIT
 ```sh
 git --version
+```
+Показать небольшой список команд GIT 
+```sh
+git
+```
+Указать имя программиста, которое будет привязываться к коммитам
+```sh
+git config --global user.name "Alexandr"
+git config --local user.name "Alexandr"
+```
+Указать электронную почту, которая будет привязываться к коммитам
+```sh
+git config --global user.email "salispiligrim@yandex.ru"
+git config --local user.email "salispiligrim@yandex.ru"
+```
+Удалить файл
+```sh
+rm Popa.txt
+```
+Переход к папке
+```sh
+cd c:\Desctop\Popa
 ```
 
 ### Создание репозитория
@@ -48,6 +71,18 @@ git commit -m "комментарий к коммиту"
 ```sh
 git log
 ```
+Список коммитов (пример):
+```sh
+commit e17e240ba981a354b34fe13dd54291c9105ce5fe (HEAD -> master)
+Author: Alexandr Vinokurov <salispiligrim@yandex.ru>
+Date:   Fri Feb 23 16:05:56 2024 +0500
+
+    add commit
+
+commit e8fb184f7a1fc4ff921e62c87a4285d4e036b3c3
+Author: Alexandr Vinokurov <salispiligrim@yandex.ru>
+Date:   Fri Feb 23 15:56:51 2024 +0500
+```
 
 #### Сокращенная версия журнала
 
@@ -55,3 +90,38 @@ git log
 git log --oneline
 ```
 
+Список коммитов (пример):
+```sh
+e17e240 (HEAD -> master) add commit
+e8fb184 add create repository instr
+e644d9b create file instruction git
+b2a71d9 add link
+6e91381 add link
+```
+
+## Переход (возврат) на нужный коммит
+
+Переход на коммит по указанному хэшу
+```sh
+git checkout (b2a71d9 - "хэш коммита")
+```
+Переход на последний (актуальный) коммит
+```sh
+git checkout master
+```
+
+## Показать изменения
+
+Показывает изменения между коммитами или по отношению к последнему коммиту
+
+```sh
+git diff
+git diff e8fb184 b2a71d9
+```
+
+## Откат
+
+Возврат изменений к последнему коммиту
+```sh
+git restore
+```
