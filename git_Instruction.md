@@ -126,4 +126,12 @@ git diff e8fb184 b2a71d9
 git restore
 ```
 
+## Отображение всех веток
+```sh
+git branch
+```
 ## Переключение между ветками
+
+```sh
+git checkout <имя ветки>
+```
