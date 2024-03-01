@@ -43,6 +43,16 @@ cd <путь к каталогу>
 git init
 ```
 
+### Создание новой ветки
+```sh
+git branch <name new branch>
+```
+### Удаление ветки
+
+```sh
+git branch -d <branch name>
+```
+
 ### Добавить файл в текущее сохранение
 
 Добавляет файл "file" в текущее сохранение (текущюю фиксацию).
@@ -141,13 +151,4 @@ git branch
 
 ```sh
 git checkout <имя ветки>
-```
-## Создание новой ветки
-```sh
-git branch <name new branch>
-```
-## Удаление ветки
-
-```sh
-git branch -d <branch name>
 ```
