@@ -125,3 +125,8 @@ git diff e8fb184 b2a71d9
 ```sh
 git restore
 ```
+
+## Отображение всех веток
+```sh
+git branch
+```
