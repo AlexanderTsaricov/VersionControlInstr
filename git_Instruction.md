@@ -139,3 +139,8 @@ git checkout <имя ветки>
 ```sh
 git branch <имя новой ветки>
 ```
+## Удаление ветки
+
+```sh
+git branch -d <branch name>
+```
