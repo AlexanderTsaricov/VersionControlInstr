@@ -144,7 +144,7 @@ git checkout <имя ветки>
 ```
 ## Создание новой ветки
 ```sh
-git branch <имя новой ветки>
+git branch <name new branch>
 ```
 ## Удаление ветки
 
